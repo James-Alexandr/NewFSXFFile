@@ -1,11 +1,23 @@
-import emojipedia from "./emojipedia";
+import React from 'react';
+import emojipedia from "./emojipedia.js";
 
-console.log(emojipedia);
+// console.log(emojipedia);
 
-var numbers = [3, 56, 2, 48, 5];
+// var numbers = [3, 56, 2, 48, 5];
+// const newNumbers = numbers.findIndex(function (num) {
+//     return num > 9;
+// });
+
+// console.log("Hello world " + newNumbers);
+let counter = 0;
+console.log(emojipedia.map(function (x) {
+
+    counter++;
+    console.log(counter + "-" + x.meaning.substring(0, 100));
+}))
 
 // function double(x) {
-//   return x * 2;
+//     return x * 2;
 // }
 
 // console.log(numbers.map(double));
@@ -34,11 +46,7 @@ var numbers = [3, 56, 2, 48, 5];
 //   return accumulator + current;
 // });
 
-// const newNumbers = numbers.findIndex(function (num) {
-//   return num > 9;
-// });
 
-// console.log("Hello world " + newNumbers);
 
 //Map -Create a new array by doing something with each item in an array.
 
